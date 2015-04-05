@@ -1,0 +1,49 @@
+@font-face {
+    font-family: boldfont;
+    src: url(../fonts/theboldfont.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: keepcalm;
+    src: url(../fonts/keepcalm.ttf) format('truetype');
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper{
+    
+    height: auto;
+    width: 100%;
+    
+}
+
+#header{
+    
+    line-height: 18px;
+    margin-left: 75px;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    
+    font-family: keepcalm;
+    font-size: 16px;
+    color: #AFA8A2;
+    font-weight: 100;
+}
+
+#intro{
+    font-size: 80px;
+    color: #333333;
+}
+
+#intro span{
+    font-family: boldfont;
+    color: #D66360;
+}
+
+#intro_s{
+    font-size: 46px;
+    color: #333333;
+}
