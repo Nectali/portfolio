@@ -16,14 +16,15 @@ body{
 #wrapper{
     
     height: auto;
-    width: 100%;
+    width: 1024px;
+    margin: 0 auto;
+    text-align: left;
     
 }
 
 #header{
     
-    line-height: 18px;
-    margin-left: 75px;
+    line-height: 14px;
     margin-top: 8%;
     margin-bottom: 8%;
     
@@ -44,6 +45,36 @@ body{
 }
 
 #intro_s{
-    font-size: 46px;
+    font-size: 42px;
     color: #333333;
+}
+
+
+
+
+#nav{
+    border-top: 2px solid #333333;
+    border-bottom: 2px solid #333333;
+}
+
+#nav ul{
+    list-style-type: none;
+    height: 100%;
+}
+
+#nav ul li{
+    display: inline;
+    margin: 0 35px;
+}
+
+#nav ul li a{
+    font-family:  keepcalm;
+    font-size: 28px;
+    text-decoration: none;
+    color: #333333;
+}
+
+#nav ul li a:hover{
+    color: #D66360;
+    transition: .2s;
 }
