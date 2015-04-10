@@ -8,10 +8,34 @@
     src: url(../fonts/keepcalm.ttf) format('truetype');
 }
 
+@font-face {
+    font-family: Raleway-Thin;
+    src: url(../fonts/Raleway-Thin.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Raleway-Light;
+    src: url(../fonts/Raleway-Light.ttf) format('truetype');
+}
+
+
+
+
 body{
     margin: 0;
     padding: 0;
+    background-color: #F9F9F9; /* For off Yellow: #F2F1ED */
+    font-family: keepcalm;
 }
+
+.title{
+    font-family: boldfont;
+    color: #D66360;
+    font-size: 52px;
+}
+
+
+
 
 #wrapper{
     
@@ -25,8 +49,8 @@ body{
 #header{
     
     line-height: 14px;
-    margin-top: 8%;
-    margin-bottom: 8%;
+    margin-top: 15%;
+    margin-bottom: 15%;
     
     font-family: keepcalm;
     font-size: 16px;
@@ -77,4 +101,111 @@ body{
 #nav ul li a:hover{
     color: #D66360;
     transition: .2s;
+}
+
+
+
+
+#content_wrapper{
+    height: auto;
+    width: 1024px;
+    margin: 0 auto;
+}
+
+
+
+
+.frame{
+    height: 350px;
+    width: 100%;
+    
+    border-bottom: 1px solid #AFA8A2;
+    overflow: hidden;
+}
+
+.left{
+    float: left;
+    width: 675px;
+    
+    font-family: Raleway-Light;
+}
+
+.right{
+    height: 300px;
+    width: 300px;
+    
+    position: relative;
+    float: right;
+    border-radius: 6px;
+    margin: 25px 12px;
+}
+
+/* all the img backgrounds */
+
+#html_css{
+    background-image: url(../img/html_css.png);   
+}
+
+#java_logo{
+    background-image: url(../img/java_logo.png);
+}
+
+#c_logo{
+    background-image: url(../img/c_logo.png);   
+}
+
+#cplus_logo{
+    background-image: url(../img/c++_logo.png);
+}
+
+#python_logo{
+    background-image: url(../img/python_logo.png);   
+}
+
+#php_logo{
+    background-image: url(../img/php_logo.png);
+}
+
+#a_logo{
+    background-image: url(../img/assembly_logo.png);
+}
+
+#ubuntu_logo{
+    background-image: url(../img/ubuntu_logo.png);
+}
+
+.right figcaption{
+    position: absolute;
+    
+    background: rgba(0, 0, 0, 0, 0.75);
+    padding 10px 20px;
+    
+    opacity: 0;
+    left: 4%;
+    right: 3%;
+    bottom: -30%;
+    margin: 0 auto;
+    
+    -webkit-transition: all 0.6s ease;
+    -moz-transition:    all 0.6s ease;
+    -o-transition:      all 0.6s ease;
+}
+
+.right:hover figcaption{
+    opacity: 1;
+    bottom: 10%;
+}
+
+.right:hover{
+    opacity: .75;
+    
+    -webkit-transition: all 1s ease;
+    -moz-transition:    all 1s ease;
+    -o-transition:      all 1s ease;
+}
+
+.right figcaption a{
+    text-decoration: none;
+    color: black;
+    
 }
