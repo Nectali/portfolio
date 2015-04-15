@@ -34,7 +34,16 @@ body{
     font-size: 52px;
 }
 
-
+.divider{
+    font-family: keepcalm;
+    color: #F9F9F9;
+    text-align: center;
+    font-size: 42px;
+    background-color: #D66360;
+    width: 100%;
+    height: 125px;
+    line-height: 125px;
+}
 
 
 #wrapper{
@@ -167,6 +176,8 @@ body{
     height: 300px;
     width: 300px;
     
+    display: table;
+    
     position: relative;
     float: right;
     border-radius: 6px;
@@ -207,16 +218,28 @@ body{
     background-image: url(../img/ubuntu_logo.png);
 }
 
+#ps_logo{
+    background-image: url(../img/ps_logo.png);
+}
+
 .right figcaption{
     position: absolute;
     
-    background: rgba(0, 0, 0, 0, 0.75);
-    padding 10px 20px;
+    height: 300px;
+    width: 300px;
+    border-radius: 6px;
+    margin: 25px 12px;
+    line-height: 300px;
+    
+    background-color: #D66360;
+    
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
     
     opacity: 0;
-    left: 4%;
-    right: 3%;
-    bottom: -30%;
+    
+    transform: translateY(30%);
     margin: 0 auto;
     
     -webkit-transition: all 0.6s ease;
@@ -226,11 +249,12 @@ body{
 
 .right:hover figcaption{
     opacity: 1;
-    bottom: 10%;
+    transform: translateY(0%);
+    
 }
 
 .right:hover{
-    opacity: .75;
+    opacity: 1;
     
     -webkit-transition: all 1s ease;
     -moz-transition:    all 1s ease;
@@ -238,7 +262,13 @@ body{
 }
 
 .right figcaption a{
+
+    font-size: 16px;
     text-decoration: none;
-    color: black;
+    color: #F9F9F9;
+    
+    padding: 10px;
+    
+    border: 2px solid #F9F9F9;
     
 }
