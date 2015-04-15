@@ -4,7 +4,11 @@
     <head>
     
         <title>Nectali's Web Portfolio</title>
+        
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        
+        
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
         
         <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
         
@@ -22,6 +26,9 @@
                 <p> HTML&nbsp;&nbsp;|&nbsp;&nbsp;CSS&nbsp;&nbsp;|&nbsp;&nbsp;Java&nbsp;&nbsp;|&nbsp;&nbsp;C&nbsp;&nbsp;|&nbsp;&nbsp;C++&nbsp;&nbsp;|&nbsp;&nbsp;Python&nbsp;&nbsp;|&nbsp;&nbsp;PHP&nbsp;&nbsp;|&nbsp;&nbsp;Assembly&nbsp;&nbsp;|&nbsp;&nbsp;Linux</p>
             </div><!-- end intro -->
             
+        </div><!-- end wrapper -->
+            
+            <div id="sticky-nav"></div>
             <div id="nav">
                 <ul>
                     <li><a href="#">Skills</a></li>
@@ -31,8 +38,6 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div><!-- end nav -->
-            
-        </div><!-- end wrapper -->
         
         <div id="content_wrapper">
         
@@ -134,7 +139,23 @@
         
         
         </div>
-        
+    
+    <script>
+         function nav_relocate() {
+            var window_top = $(window).scrollTop();
+            var div_top = $('#sticky-nav').offset().top;
+            if (window_top > div_top) {
+                $('#nav').addClass('stick');
+            } else {
+                $('#nav').removeClass('stick');
+            }
+        }
+
+        $(function () {
+            $(window).scroll(nav_relocate);
+            nav_relocate();
+        });   
+    </script>   
         
     </body>
     

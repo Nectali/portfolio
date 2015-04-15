@@ -39,22 +39,32 @@ body{
 
 #wrapper{
     
-    height: auto;
-    width: 1024px;
-    margin: 0 auto;
-    text-align: left;
+    display: table;
+    text-align: center;
+    
+    height: 620px;
+    width: 100%;
+    top: 0px;
+    float: left;
+    
+    background-color: #D66360;
     
 }
 
 #header{
     
+    display: table-cell;
+    vertical-align: middle;
+    
+
     line-height: 14px;
-    margin-top: 15%;
-    margin-bottom: 15%;
+    width: 75%;
+    
+    margin: 0 auto;
     
     font-family: keepcalm;
     font-size: 16px;
-    color: #AFA8A2;
+    color: #333333;
     font-weight: 100;
 }
 
@@ -65,7 +75,7 @@ body{
 
 #intro span{
     font-family: boldfont;
-    color: #D66360;
+    color: #F9F9F9;
 }
 
 #intro_s{
@@ -75,10 +85,30 @@ body{
 
 
 
+#sticky-nav{
+    width: auto;
+    height: 0px;
+    clear: both;
+}
 
 #nav{
     border-top: 2px solid #333333;
     border-bottom: 2px solid #333333;
+    background-color: #F9F9F9;
+    
+    width: 1024px;
+    margin: 0 auto;
+    clear: both;
+}
+
+#nav.stick {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    margin-left: -512px;
+    
+
+    z-index: 10000;
 }
 
 #nav ul{
@@ -116,7 +146,8 @@ body{
 
 
 .frame{
-    height: 350px;
+    min-height: 350px;
+    height: auto;
     width: 100%;
     
     border-bottom: 1px solid #AFA8A2;
@@ -125,7 +156,9 @@ body{
 
 .left{
     float: left;
-    width: 675px;
+    width: 650px;
+    
+    padding-left: 25px;
     
     font-family: Raleway-Light;
 }
