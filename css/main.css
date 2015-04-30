@@ -444,7 +444,7 @@ body{
 button, input, select{
     font-family: keepcalm;
     font-size: 100%;
-    margin: 0;
+    
     outline: none;
 }
 
@@ -453,21 +453,26 @@ input:focus{
     transition: .1s;
 }
 
+/* input:required{
+    border: 2px solid #D66360;   
+} */
+
 ::-webkit-input-placeholder {
-   padding-left: 20px;
+   padding-left: 0px;
 }
 
 .n_e{
     width: 365px;
     height: 54px;
     
-    margin: 5px;
-    
-}
-
-.n_e{
     font-family: keepcalm;
     font-size: 100%;
+    
+    margin: 5px;
+    
+    -webkit-box-sizing: border-box;
+    
+    padding-left: 20px;
     
 }
 
@@ -478,11 +483,25 @@ input:focus{
     outline: none;
     font-family: keepcalm;
     font-size: 100%;
+    
+    -webkit-box-sizing: border-box;
+    
+    padding-left: 20px;
+    padding-top: 20px;
 }
 
 #message:focus{
     border: 2px solid #667080;
     transition: .1s;
+}
+
+/* #message:required{
+    border: 2px solid #D66360;
+} */
+
+#message::-webkit-input-placeholder{
+    padding-left: 0px;
+    padding-top: 0px;
 }
 
 #submit{
