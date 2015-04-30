@@ -23,7 +23,10 @@
     src: url(../fonts/Raleway-Regular.ttf) format('truetype');
 }
 
-
+@font-face {
+    font-family: Brandon-Reg;
+    src: url(../fonts/Brandon_reg.otf) format('opentype');
+}
 
 
 body{
@@ -96,7 +99,7 @@ body{
     height: 620px;
     width: 100%;
     top: 0px;
-    float: left;
+    
     
     background-color: #667080;
     
@@ -326,11 +329,10 @@ body{
 }
 
 #resume_container{
-    width: 1200px;
-    height: 350px;
+    width: auto;
+    height: auto;
     
     margin: 100px auto 100px auto;
-    
 }
 
 .resume{
@@ -339,19 +341,19 @@ body{
     
     position: relative;
     
+    display: inline-block;
+    
     border-radius: 6px;
 }
 
 #docx {
     background-image: url(../img/resume_word.png);
     
-    float: right;
 }
 
 #pdf {
     background-image: url(../img/resume_adobe.png);
     
-    float: left;
     
 }
 
@@ -424,13 +426,69 @@ body{
 
 #des{
     text-align: left;
-    font-family: Raleway-Regular;
+    font-family: Brandon-Reg;
     
     margin: 0 25%;
     
     padding-left: 25px;
     padding-right: 25px;
     
+}
+
+#form_wrap{
+    height: auto;
+    width: auto;
+    margin: 0 auto;
+}
+
+button, input, select{
+    font-family: keepcalm;
+    font-size: 100%;
+    margin: 0;
+}
+
+textarea{
+    outline: none;   
+}
+
+::-webkit-input-placeholder {
+   padding-left: 20px;
+}
+
+.n_e{
+    width: 365px;
+    height: 54px;
+    
+    margin: 5px;
+    
+}
+
+.n_e{
+    font-family: keepcalm;
+    font-size: 100%;
+    
+}
+
+#message{
+    width: 750px;
+    height: 200px;
+}
+
+#submit{
+    height: 54px;
+    width: 750px;
+    
+    cursor: pointer;
+    
+    background-color: #f9f9f9;
+    color: #667080;
+    border: 3px solid #667080;
+}
+
+#submit:hover{
+    color: #f9f9f9;
+    background-color: #667080;
+    transition: .3s ease;
 }
 
 .hexagon {
