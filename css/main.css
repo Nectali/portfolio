@@ -445,10 +445,12 @@ button, input, select{
     font-family: keepcalm;
     font-size: 100%;
     margin: 0;
+    outline: none;
 }
 
-textarea{
-    outline: none;   
+input:focus{
+    border: 2px solid #667080;
+    transition: .1s;
 }
 
 ::-webkit-input-placeholder {
@@ -470,8 +472,17 @@ textarea{
 }
 
 #message{
-    width: 750px;
+    width: 748px;
     height: 200px;
+    
+    outline: none;
+    font-family: keepcalm;
+    font-size: 100%;
+}
+
+#message:focus{
+    border: 2px solid #667080;
+    transition: .1s;
 }
 
 #submit{
