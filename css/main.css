@@ -9,23 +9,13 @@
 }
 
 @font-face {
-    font-family: Raleway-Thin;
-    src: url(../fonts/Raleway-Thin.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: Raleway-Light;
-    src: url(../fonts/Raleway-Light.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: Raleway-Regular;
-    src: url(../fonts/Raleway-Regular.ttf) format('truetype');
-}
-
-@font-face {
     font-family: Brandon-Reg;
     src: url(../fonts/Brandon_reg.otf) format('opentype');
+}
+
+@font-face {
+    font-family: Montserrat-Reg;
+    src: url(../fonts/Montserrat-Regular.otf) format('opentype');   
 }
 
 
@@ -33,7 +23,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: #F9F9F9; /* For off Yellow: #F2F1ED */
-    font-family: keepcalm;
+    font-family: Montserrat-Reg;
 }
 
 #t1, #t2, #t3, #t4, #t5{
@@ -96,12 +86,14 @@ body{
     display: table;
     text-align: center;
     
-    height: 620px;
+    height: 760px;
     width: 100%;
     top: 0px;
     
     
-    background-color: #667080;
+    background-color: #F5F5F5;
+    background-image: url(../img/Pens.jpg);
+    background-size: cover;
     
 }
 
@@ -110,31 +102,57 @@ body{
     display: table-cell;
     vertical-align: middle;
     
-
-    line-height: 14px;
     width: 75%;
     
     margin: 0 auto;
     
     font-family: keepcalm;
-    font-size: 16px;
-    color: #F9F9F9;
+    font-size: 1em;
+    color: #999999;
     font-weight: 100;
 }
 
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
 #intro{
-    font-size: 80px;
-    color: #333333;
+    font-size: 1em;
+    letter-spacing: 3px;
+    color: #A9A9A9;
+    
+    -webkit-animation-name: fadeInUp;
+    -webkit-animation-duration: 2s;
 }
 
 #intro span{
-    font-family: boldfont;
-    color: #F9F9F9;
+    font-size: 5em;
+    letter-spacing: 3px;
+    font-family: Montserrat-Reg;
+    color: #222222;
+    font-weight: 400;
+    
+    -webkit-animation-name: fadeInUp;
+    -webkit-animation-duration: 2s;
 }
 
 #intro_s{
-    font-size: 42px;
-    color: #333333;
+    font-size: 1em;
+    letter-spacing: 3px;
+    color: #CACACA;
+    
+    -webkit-animation-name: fadeInUp;
+    -webkit-animation-duration: 2s;
 }
 
 
