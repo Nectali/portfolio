@@ -18,21 +18,54 @@
     src: url(../fonts/Montserrat-Regular.otf) format('opentype');   
 }
 
+@font-face {
+  font-family: 'typicons';
+  src: url("../fonts/typicons.eot");
+  src: url("../fonts/typicons.eot?#iefix") format('embedded-opentype'),
+       url("../fonts/typicons.woff") format('woff'),
+       url("../fonts/typicons.ttf") format('truetype'),
+       url("../fonts/typicons.svg#typicons") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.bigger{
+    font-size: 10em;
+    color: #999999;
+}
+
+.bigger:hover{
+    color: #222222;
+    transition: .5s;
+}
 
 body{
     margin: 0;
     padding: 0;
-    background-color: #F9F9F9; /* For off Yellow: #F2F1ED */
+    background-color: white; /* For off Yellow: #F2F1ED */
     font-family: Montserrat-Reg;
 }
 
 #t1, #t2, #t3, #t4, #t5{
-    font-family: keepcalm;
+    color: #222222;
+    
+    font-family: Montserrat-Reg;
+    font-weight: 400;
     text-align: left;
-    font-size: 46px;
+    line-height: 1.0;
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
     
-    margin: 200px 0 200px 25%;
+    margin: 200px 0 200px 0;
     
+}
+
+.underscore{
+    font-family: keepcalm;
+    font-size: 1em;
+    color: #999999;
+    font-weight: 100;
 }
 
 .title_white{
@@ -59,7 +92,7 @@ body{
     color: #667080;
     text-align: center;
     
-    background color: #F9F9F9;
+    background-color: white;
     
     width: 100%;
     
@@ -71,7 +104,7 @@ body{
     color: #F9F9F9;
     text-align: center;
     
-    background-color: #667080;
+    background-color: #F1F1F1;
     
     width: 100%;
     
@@ -110,6 +143,14 @@ body{
     font-size: 1em;
     color: #999999;
     font-weight: 100;
+}
+
+.hidden{
+     opacity:0;
+}
+.visible{
+     opacity:1;
+    -webkit-animation-delay: .5s;
 }
 
 @-webkit-keyframes fadeInUp {
@@ -161,13 +202,18 @@ body{
     width: auto;
     height: 0px;
     clear: both;
+    
+    background-color: #F5F5F5;
 }
 
 #nav{
-    border-top: 2px solid #333333;
-    border-bottom: 2px solid #333333;
-    background-color: #F9F9F9;
     
+    background-color: #F1F1F1;
+    
+    border-top: 1px solid #222222;
+    border-bottom: 1px solid #222222;
+    
+    height: 102px;
     width: 100%;
     margin: 0 auto;
     clear: both;
@@ -183,33 +229,39 @@ body{
     
     margin: auto;
     
-    border-top: 0px solid #333333;
-    box-shadow: 0px 1px 3px #888888;
+    border-top: 0px solid #222222;
+    border-bottom: 0px solid #222222;
+    
+    background-color: white;
 
+    transition: .3s;
+    
     z-index: 10000;
 }
 
 #nav ul{
     list-style-type: none;
     
-    weidth: 100%;
-    margin: 25px auto;
+    width: 100%;
+    margin: 0px auto;
+    
+    padding-top: 45px;
 }
 
 #nav ul li{
     display: inline;
-    margin: 0 35px;
+    margin: 0px 60px;
 }
 
 #nav ul li a{
-    font-family:  keepcalm;
-    font-size: 28px;
+    font-family:  Montserrat-Reg;
+    font-size: 0.9375em;
     text-decoration: none;
-    color: #667080;
+    color: #999999;
 }
 
 #nav ul li a:hover{
-    color: #333333;
+    color: #222222;
     transition: .5s;
 }
 
@@ -219,120 +271,45 @@ body{
 #content_wrapper{
     height: auto;
     width: 100%;
-    margin: 50px auto;
+    margin: 25px auto;
 }
 
 
 
 
-.row{
-    min-width: 350px;
-    width: auto;
-    
-    height: auto;
-    
-    margin: 0 12%;
-    
-}
-
-.right{
-    height: 550px;
-    width: 300px;
-    
+.inline{
     display: inline-block;
     
-    position: relative;
+    min-height: 303px;
+    height: auto;
+    width: 273px;
     
-    border-radius: 0px;
-    margin: 25px 50px;
-}
-
-/* all the img backgrounds */
-
-#html_css{
-    background-image: url(../img/html_css.png);   
-}
-
-#java_logo{
-    background-image: url(../img/java_logo.png);
-}
-
-#c_logo{
-    background-image: url(../img/c_logo.png);   
-}
-
-#cplus_logo{
-    background-image: url(../img/c++_logo.png);
-}
-
-#python_logo{
-    background-image: url(../img/python_logo.png);   
-}
-
-#php_logo{
-    background-image: url(../img/php_logo.png);
-}
-
-#a_logo{
-    background-image: url(../img/assembly_logo.png);
-}
-
-#ubuntu_logo{
-    background-image: url(../img/ubuntu_logo.png);
-}
-
-#ps_logo{
-    background-image: url(../img/ps_logo.png);
-}
-
-.right figcaption{
-    position: absolute;
+    margin: 25px 45px;
     
-    height: 550px;
-    width: 300px;
-    border-radius: 0px;
-    margin: 25px 12px;
-    line-height: 550px;
-    
-    background-color: #F9F9F9;
+
+}
+
+.s_title{
+    font-family: Montserrat-Reg;
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #222222;
     
     text-align: center;
-    display: table-cell;
-    vertical-align: middle;
+    text-transform: uppercase;
     
-    opacity: 0;
-    
-    transform: translateY(30%);
-    margin: 0 auto;
-    
-    -webkit-transition: all 0.6s ease;
-    -moz-transition:    all 0.6s ease;
-    -o-transition:      all 0.6s ease;
+
 }
 
-.right:hover figcaption{
-    opacity: 1;
-    transform: translateY(0%);
+.s_info{
+    font-family: sans-serif;
+    font-size: .875em;
+    line-height: 1.4;
+    font-weight: 400;
+    color: #999999;
     
-}
-
-.right:hover{
-    opacity: 1;
-    
-    -webkit-transition: all 1s ease;
-    -moz-transition:    all 1s ease;
-    -o-transition:      all 1s ease;
-}
-
-.right figcaption a{
-
-    font-size: 16px;
-    text-decoration: none;
-    color: #667080;
-    
-    padding: 10px;
-    
-    border: 2px solid #667080;
+    text-align: center;
     
 }
 
@@ -444,9 +421,14 @@ body{
 
 #des{
     text-align: left;
-    font-family: Brandon-Reg;
+    font-family: sans-serif;
     
-    margin: 0 25%;
+    font-size:  .875em;
+    line-height: 1.4;
+    
+    color: #CACACA;
+    
+    margin: 0 35%;
     
     padding-left: 25px;
     padding-right: 25px;
@@ -509,7 +491,7 @@ input:focus{
 }
 
 #message:focus{
-    border: 2px solid #667080;
+    border: 2px solid #222222;
     transition: .1s;
 }
 
@@ -528,76 +510,13 @@ input:focus{
     
     cursor: pointer;
     
-    background-color: #f9f9f9;
+    background-color: white;
     color: #667080;
-    border: 3px solid #667080;
+    border: 3px solid #222222;
 }
 
 #submit:hover{
-    color: #f9f9f9;
-    background-color: #667080;
+    color: white;
+    background-color: #222222;
     transition: .3s ease;
-}
-
-.hexagon {
-  position: relative;
-  margin: 100px auto;
-  width: 190px;
-  height: 110px;
-  background-image: url(../img/placeholder.png);
-  background-position: center center;
-  z-index: 1;
-  /* Text styling */
-  line-height: 110px;
-  text-align: center;
-  font-family: sans-serif;
-  font-size: 15px;
-  font-weight: bold;
-  letter-spacing: 6px;
-  color: #fff;
-  color: rgba(255,255,255,.5);
-  cursor: pointer;
-  transition: color 500ms ease, text-shadow 500ms ease;
-}
-.hexagon:hover {
-  color: #fff;
-  text-shadow: 0 0 10px white;
-    background-image: url(../img/placeholder2.png);
-    transition: 1s;
-}
-
-.hexagon .face1,
-.hexagon .face2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background: inherit;
-  z-index: -1;
-  /* Keeps borders smooth in webkit */
-  backface-visibility: hidden;
-}
-.hexagon .face1:before,
-.hexagon .face2:before {
-  content: '';
-  position: absolute;
-  width: 220px;
-  height: 220px;
-  background: inherit;
-}
-
-.hexagon .face1 { transform: rotate(60deg); }
-.hexagon .face1:before {
-  left: 0;
-  transform-origin: left top;
-  transform: rotate(-60deg) translate(-110px, 0);
-}
-
-.hexagon .face2 { transform: rotate(-60deg); }
-.hexagon .face2:before {
-  right: 0;
-  transform-origin: right top;
-  transform: rotate(60deg) translate(110px, 0);
 }
