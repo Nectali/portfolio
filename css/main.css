@@ -41,12 +41,12 @@
 
 body{
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 0;
     background-color: white; /* For off Yellow: #F2F1ED */
     font-family: Montserrat-Reg;
 }
 
-#t1, #t2, #t3, #t4, #t5{
+#t1{
     color: #222222;
     
     font-family: Montserrat-Reg;
@@ -57,7 +57,21 @@ body{
     text-align: center;
     text-transform: uppercase;
     
-    margin: 200px 0 200px 0;
+    margin: 200px 0 30px 0;
+}
+
+#t2, #t3, #t4, #t5{
+    color: #222222;
+    
+    font-family: Montserrat-Reg;
+    font-weight: 400;
+    text-align: left;
+    line-height: 1.0;
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    
+    margin: 200px 0 150px 0;
     
 }
 
@@ -150,7 +164,7 @@ body{
 }
 .visible{
      opacity:1;
-    -webkit-animation-delay: .5s;
+    -webkit-animation-delay: .3s;
 }
 
 @-webkit-keyframes fadeInUp {
@@ -442,7 +456,7 @@ body{
 }
 
 button, input, select{
-    font-family: keepcalm;
+    font-family: Montserrat-Reg;
     font-size: 100%;
     
     outline: none;
@@ -465,7 +479,7 @@ input:focus{
     width: 365px;
     height: 54px;
     
-    font-family: keepcalm;
+    font-family: Montserrat-Reg;
     font-size: 100%;
     
     margin: 5px;
@@ -481,7 +495,7 @@ input:focus{
     height: 200px;
     
     outline: none;
-    font-family: keepcalm;
+    font-family: Montserrat-Reg;
     font-size: 100%;
     
     -webkit-box-sizing: border-box;
@@ -492,7 +506,7 @@ input:focus{
 
 #message:focus{
     border: 2px solid #222222;
-    transition: .1s;
+    transition: .3s;
 }
 
 /* #message:required{
@@ -502,6 +516,15 @@ input:focus{
 #message::-webkit-input-placeholder{
     padding-left: 0px;
     padding-top: 0px;
+}
+
+#warning{
+    font-family:  Montserrat-Reg;
+    font-size: 2em;
+    font-weight: 400;
+    
+    text-align: center;
+    color: #222222;
 }
 
 #submit{
@@ -521,7 +544,7 @@ input:focus{
     transition: .3s ease;
 }
 
-#footer{
+footer{
     color: #999999;
     background-color: #F1F1F1;
     
@@ -531,4 +554,25 @@ input:focus{
     font-size: 1em;
     font-family: sans-serif;
     padding-top: 30px;
+    
+    bottom: 0;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+    margin-bottom: 25px;
+  background-image: url(../img/Stock2.jpg);
+  background-size: cover;
+}
+
+.clipCircle {
+  -webkit-clip-path: circle(50% at 50% 50%);
+}
+
+.parallax-window {
+    min-height: 300px;
+    background: transparent;
+    margin: 0;
 }
