@@ -39,6 +39,16 @@
     transition: .5s;
 }
 
+.bigger2{
+    font-size: 10em;
+    color: #222222;
+}
+
+.bigger2:hover{
+    color: #999999;
+    transition: .5s;
+}
+
 body{
     margin: 0;
     padding: 0 0 0 0;
@@ -138,7 +148,7 @@ body{
     top: 0px;
     
     
-    background-color: #F5F5F5;
+    background-color: #F1F1F1;
     background-image: url(../img/Pens.jpg);
     background-size: cover;
     
@@ -227,7 +237,8 @@ body{
     border-top: 1px solid #222222;
     border-bottom: 1px solid #222222;
     
-    height: 102px;
+    min-height: 102px;
+    height: auto;
     width: 100%;
     margin: 0 auto;
     clear: both;
@@ -338,10 +349,89 @@ body{
 }
 
 #resume_container{
-    width: auto;
+    width: 100%;
     height: auto;
     
     margin: 100px auto 100px auto;
+}
+
+.row{
+    width: 850px;
+    min-height: 250px;
+    height: auto;
+    
+    margin: 0 auto;
+}
+
+.outside1{
+    display: inline;
+    float: left;
+    
+    width: 25%;
+    height: 45px;
+    
+    line-height: 45px;
+    
+    color: #222222;
+    font-family: Montserrat-Reg;
+    font-size: 1.5em;
+    line-height: 1.4;
+    
+    text-transform: uppercase;
+}
+
+.outside2{
+    display: inline;
+    float: right;
+    
+    width: 25%;
+    height: 62px;
+    
+    line-height: 62px;
+    
+    color: #999999;
+    font-family: Montserrat-Reg;
+    font-size: 1em;
+    text-align: center;
+}
+
+.inside{
+    margin: 0 25% 0 25%;
+    
+    width: 50%;
+    height: auto;
+}
+
+.inside1{
+    color: #222222;
+    font-family: Montserrat-Reg;
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: left;
+    text-transform: uppercase;
+    
+    margin-top: 5px;
+}
+
+.inside2{
+    color: #999999;
+    font-family: Montserrat-Reg;
+    font-size: 1.1em;
+    text-align: left;
+    line-height: 1.4;
+    font-weight: 400;
+    
+    margin-top: -40px;
+}
+
+.inside3{
+    color: #CACACA;
+    font-family: sans-serif;
+    font-size: .875em;
+    text-align: left;
+    line-height: 1.1;
+    margin-top: -25px;
 }
 
 .resume{
@@ -356,72 +446,85 @@ body{
 }
 
 #docx {
-    background-image: url(../img/resume_word.png);
+    display: inline-block;
     
+    width: 150px;
+    height: 30px;
+    border-radius: 3px;
+    border: 2px solid #222222;
+    
+    padding-top: 9px;
+    
+    margin-left: 25px;
+}
+
+#docx:hover{
+    display: inline-block;
+    
+    width: 150px;
+    height: 30px;
+    border-radius: 3px;
+    border: 2px solid #2b5796;
+    background-color: #2b5796;
+    color: #F9F9F9;
+    
+    transition: 1s;
+    
+    padding-top: 9px;
+}
+
+#docx a{
+    font-family: Montserrat-Reg;
+    text-decoration: none;
+    color: #222222;
+    font-size: 0.875em;
+    text-transform: uppercase;
+}
+
+#docx a:hover{
+    color: #F9F9F9;
+    transition: 1s;
 }
 
 #pdf {
-    background-image: url(../img/resume_adobe.png);
+    display: inline-block;
     
+    width: 150px;
+    height: 30px;
+    border-radius: 3px;
+    border: 2px solid #222222;
     
+    padding-top: 9px;
+    
+    margin-right: 25px;
 }
 
-.resume figcaption{
-    position: absolute;
+#pdf:hover{
+    display: inline-block;
     
-    height: 300px;
-    width: 500px;
-    border-radius: 6px;
-    margin: 25px 6px;
-    line-height: 300px;
-    
-    
-    text-align: center;
-    display: table-cell;
-    vertical-align: middle;
-    
-    opacity: 0;
-    
-    transform: translateY(30%);
-    margin: 0 auto;
-    
-    -webkit-transition: all 0.6s ease;
-    -moz-transition:    all 0.6s ease;
-    -o-transition:      all 0.6s ease;   
-}
-
-#docx figcaption{
-    background-color: #2b5796;
-}
-
-#pdf figcaption{
+    width: 150px;
+    height: 30px;
+    border-radius: 3px;
+    border: 2px solid #e20b0b;
     background-color: #e20b0b;
-}
-
-.resume:hover figcaption{
-    opacity: 1;
-    transform: translateY(0%);
-    
-}
-
-.resume:hover{
-    opacity: 1;
-    
-    -webkit-transition: all 1s ease;
-    -moz-transition:    all 1s ease;
-    -o-transition:      all 1s ease;
-}
-
-.resume figcaption a{
-
-    font-size: 16px;
-    text-decoration: none;
     color: #F9F9F9;
     
-    padding: 10px;
+    transition: 1s;
     
-    border: 2px solid #F9F9F9;
-    
+    padding-top: 9px;
+}
+
+#pdf a{
+    font-family: Montserrat-Reg;
+    text-decoration: none;
+    color: #222222;
+    font-size: 0.875em;
+    text-transform: uppercase;
+}
+
+#pdf a:hover{
+    color: #F9F9F9;
+    transition: 1s;
 }
 
 #about_container{
@@ -431,22 +534,6 @@ body{
     width 100%;
     
     text-align: center;
-}
-
-#des{
-    text-align: left;
-    font-family: sans-serif;
-    
-    font-size:  .875em;
-    line-height: 1.4;
-    
-    color: #CACACA;
-    
-    margin: 0 35%;
-    
-    padding-left: 25px;
-    padding-right: 25px;
-    
 }
 
 #form_wrap{
