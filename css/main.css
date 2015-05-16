@@ -149,9 +149,10 @@ body{
     
     
     background-color: #F1F1F1;
-    background-image: url(../img/Pens.jpg);
-    background-size: cover;
-    
+    background-image: url(../img/Pens3.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left bottom;
 }
 
 #header{
