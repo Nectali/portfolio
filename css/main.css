@@ -533,7 +533,7 @@ body{
 }
 
 #pdf:hover{
-    display: inline-block;
+    
     
     width: 150px;
     height: 30px;
@@ -583,7 +583,7 @@ button, input, select{
 }
 
 input:focus{
-    border: 2px solid #667080;
+    border: 2px solid #222222;
     transition: .1s;
 }
 
@@ -679,12 +679,30 @@ footer{
 }
 
 .box {
-  width: 300px;
-  height: 300px;
-  margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
     margin-bottom: 25px;
-  background-image: url(../img/Stock2.jpg);
-  background-size: cover;
+    background-image: url(../img/Portrait2.jpg);
+    background-size: cover;
+    
+    filter: url(../img/Portrait2.jpg);
+    -webkit-filter: grayscale(0%);
+    -webkit-transition: all .6s ease;
+    -webkit-backface-visibility: hidden;
+    
+    filter: url(../img/Portrait2.jpg);
+    filter: gray;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+}
+
+.box:hover {
+     filter: url(../img/Portrait2.jpg);
+    -webkit-filter: grayscale(0%);
+    -webkit-transition: all .6s ease;
+    -webkit-backface-visibility: hidden;
+    
 }
 
 .clipCircle {
